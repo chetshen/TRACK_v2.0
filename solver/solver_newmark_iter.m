@@ -56,11 +56,13 @@ while 1
     Z.r=shape*dis2.r'; %modification needed
     
     %for vehicle system
-    %     acc2.w=-wh_ld+F/m_w;
+    %    rigid wheelset;
     acc2.w=(-m_w*9.8-wh_ld+F)/m_w;
     vel2.w=vel1.w+deltat/2*(acc1.w+acc2.w);
     dis2.w=dis1.w+deltat/2*(vel1.w+vel2.w);
     Z.w=dis2.w;
+    %flexible wheelset
+    
     %update the contact force
     switch contactID
         %-----Hertz spring----
