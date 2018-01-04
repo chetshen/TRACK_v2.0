@@ -1,6 +1,7 @@
 %%
 %FE model by Maider
 %%add comment
+%add another comment
 
 function [in_data] = get_input_2(in_data)
 %%
